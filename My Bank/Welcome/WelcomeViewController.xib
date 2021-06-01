@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="My_Bank" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="AFQ-QY-nFm">
+                    <rect key="frame" x="0.0" y="-6" width="414" height="909"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3L-Zy-uXD">
+                    <rect key="frame" x="155" y="94" width="105" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht2-CQ-41t" customClass="AccentButton" customModule="My_Bank" customModuleProvider="target">
+                    <rect key="frame" x="44" y="737" width="326" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="ewD-rh-463"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Login to your account"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-Lt-Jx3">
+                    <rect key="frame" x="50" y="838" width="314" height="24"/>
+                    <string key="text">Do you want more informations?
+Click here and conctat us.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" name="Link"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ucm-Lt-Jx3" secondAttribute="trailing" constant="50" id="0lM-k1-25z"/>
+                <constraint firstItem="Ht2-CQ-41t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="44" id="5U7-2Y-gnz"/>
+                <constraint firstItem="AFQ-QY-nFm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P1D-pE-7ez"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ht2-CQ-41t" secondAttribute="bottom" constant="70" id="TQF-v5-tGR"/>
+                <constraint firstAttribute="bottom" secondItem="AFQ-QY-nFm" secondAttribute="bottom" constant="-7" id="WxD-N0-WqT"/>
+                <constraint firstItem="Ucm-Lt-Jx3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="Ypx-Y0-ezc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ht2-CQ-41t" secondAttribute="trailing" constant="44" id="Z8A-O9-xWE"/>
+                <constraint firstItem="Ucm-Lt-Jx3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="emK-gK-Pco"/>
+                <constraint firstItem="AFQ-QY-nFm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-6" id="kuJ-h6-0WJ"/>
+                <constraint firstItem="AFQ-QY-nFm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pOH-BD-xvK"/>
+            </constraints>
+            <point key="canvasLocation" x="121.73913043478262" y="133.92857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Ht2-CQ-41t">
+            <size key="intrinsicContentSize" width="149" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="screen_welcome" width="414" height="896.5"/>
+        <namedColor name="Link">
+            <color red="0.26666666666666666" green="0.62352941176470589" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
