@@ -111,14 +111,13 @@
 				8465D9582666950900CCC08B /* Asset.swift */,
 				847A6F602666CDB80095F3F0 /* CommonViews */,
 				847A6F542666C2910095F3F0 /* Welcome */,
+				847A6F7126678D610095F3F0 /* Login */,
 				847A6F5F2666C8CC0095F3F0 /* TabBar */,
 				8465D942266642F700CCC08B /* Main.storyboard */,
 				8465D947266642FA00CCC08B /* LaunchScreen.storyboard */,
 				8465D94A266642FA00CCC08B /* Info.plist */,
 				8465D945266642FA00CCC08B /* Assets.xcassets */,
 				847A6F522666C28A0095F3F0 /* Colors.xcassets */,
-				847A6F6D26678D060095F3F0 /* LoginViewController.swift */,
-				847A6F6E26678D060095F3F0 /* LoginViewController.xib */,
 			);
 			path = "My Bank";
 			sourceTree = "<group>";
@@ -160,6 +159,15 @@
 				847A6F62266784670095F3F0 /* SAPinViewController.swift */,
 			);
 			path = PasscodeView;
+			sourceTree = "<group>";
+		};
+		847A6F7126678D610095F3F0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				847A6F6D26678D060095F3F0 /* LoginViewController.swift */,
+				847A6F6E26678D060095F3F0 /* LoginViewController.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
