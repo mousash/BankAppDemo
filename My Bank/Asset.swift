@@ -10,6 +10,8 @@ import UIKit
 struct Assets {
     struct Images {
         static let screenWelcome = UIImage(named: "screen_welcome")
+        static let key = UIImage(named: "key")
+        static let man = UIImage(named: "man")
     }
     
     struct Colors {
