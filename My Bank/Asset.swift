@@ -19,5 +19,6 @@ struct Assets {
         static let link = UIColor(named: "Link")
         static let background = UIColor(named: "Background")
         static let darkBackground = UIColor(named: "DarkBackground")
+        static let lightBackground = UIColor(named: "LightBackground")
     }
 }
