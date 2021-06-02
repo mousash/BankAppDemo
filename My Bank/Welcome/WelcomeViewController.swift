@@ -14,4 +14,7 @@ class WelcomeViewController: UIViewController {
 
     }
     
+    @IBAction func loginButtonTapped(_ sender: Any) {
+       
+    }
 }

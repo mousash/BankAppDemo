@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,11 @@
 		847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F592666C8C00095F3F0 /* TabBarCell.swift */; };
 		847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F5A2666C8C00095F3F0 /* TabBarView.swift */; };
 		847A6F5E2666C8C00095F3F0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F5B2666C8C00095F3F0 /* TabBar.swift */; };
+		847A6F65266784670095F3F0 /* SAPinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F61266784660095F3F0 /* SAPinConstants.swift */; };
+		847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F62266784670095F3F0 /* SAPinViewController.swift */; };
+		847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F63266784670095F3F0 /* SAButtonView.swift */; };
+		847A6F68266784670095F3F0 /* SACircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F64266784670095F3F0 /* SACircleView.swift */; };
+		847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 847A6F6A266784CE0095F3F0 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,13 @@
 		847A6F592666C8C00095F3F0 /* TabBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
 		847A6F5A2666C8C00095F3F0 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		847A6F5B2666C8C00095F3F0 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		847A6F61266784660095F3F0 /* SAPinConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPinConstants.swift; sourceTree = "<group>"; };
+		847A6F62266784670095F3F0 /* SAPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPinViewController.swift; sourceTree = "<group>"; };
+		847A6F63266784670095F3F0 /* SAButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAButtonView.swift; sourceTree = "<group>"; };
+		847A6F64266784670095F3F0 /* SACircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SACircleView.swift; sourceTree = "<group>"; };
+		9E67D5B043CBB33633DA2128 /* Pods-My Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Bank.debug.xcconfig"; path = "Target Support Files/Pods-My Bank/Pods-My Bank.debug.xcconfig"; sourceTree = "<group>"; };
+		CC1A4F1F51568058BA469B53 /* Pods-My Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Bank.release.xcconfig"; path = "Target Support Files/Pods-My Bank/Pods-My Bank.release.xcconfig"; sourceTree = "<group>"; };
+		D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8610F09F8F8A8024C277CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DDA5F1D9D294B254E584E25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E67D5B043CBB33633DA2128 /* Pods-My Bank.debug.xcconfig */,
+				CC1A4F1F51568058BA469B53 /* Pods-My Bank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8465D930266642F700CCC08B = {
 			isa = PBXGroup;
 			children = (
 				8465D93B266642F700CCC08B /* My Bank */,
 				8465D93A266642F700CCC08B /* Products */,
+				2DDA5F1D9D294B254E584E25 /* Pods */,
+				1C8610F09F8F8A8024C277CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +139,21 @@
 		847A6F602666CDB80095F3F0 /* CommonViews */ = {
 			isa = PBXGroup;
 			children = (
+				847A6F6C26678B0D0095F3F0 /* PasscodeView */,
 				847A6F552666C31A0095F3F0 /* CustomButton.swift */,
 			);
 			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		847A6F6C26678B0D0095F3F0 /* PasscodeView */ = {
+			isa = PBXGroup;
+			children = (
+				847A6F63266784670095F3F0 /* SAButtonView.swift */,
+				847A6F64266784670095F3F0 /* SACircleView.swift */,
+				847A6F61266784660095F3F0 /* SAPinConstants.swift */,
+				847A6F62266784670095F3F0 /* SAPinViewController.swift */,
+			);
+			path = PasscodeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8465D94D266642FA00CCC08B /* Build configuration list for PBXNativeTarget "My Bank" */;
 			buildPhases = (
+				B881241977EA2E56DBF49375 /* [CP] Check Pods Manifest.lock */,
 				8465D935266642F700CCC08B /* Sources */,
 				8465D936266642F700CCC08B /* Frameworks */,
 				8465D937266642F700CCC08B /* Resources */,
@@ -128,6 +173,9 @@
 			dependencies = (
 			);
 			name = "My Bank";
+			packageProductDependencies = (
+				847A6F6A266784CE0095F3F0 /* SnapKit */,
+			);
 			productName = "My Bank";
 			productReference = 8465D939266642F700CCC08B /* My Bank.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 8465D930266642F700CCC08B;
+			packageReferences = (
+				847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 8465D93A266642F700CCC08B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -179,6 +230,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B881241977EA2E56DBF49375 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Bank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8465D935266642F700CCC08B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -186,9 +262,13 @@
 			files = (
 				847A6F5E2666C8C00095F3F0 /* TabBar.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
+				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
 				847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */,
+				847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */,
+				847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */,
 				847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */,
+				847A6F65266784670095F3F0 /* SAPinConstants.swift in Sources */,
 				8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */,
 				8465D9592666950900CCC08B /* Asset.swift in Sources */,
 				8465D93F266642F700CCC08B /* SceneDelegate.swift in Sources */,
@@ -335,6 +415,7 @@
 		};
 		8465D94E266642FA00CCC08B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E67D5B043CBB33633DA2128 /* Pods-My Bank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,6 +435,7 @@
 		};
 		8465D94F266642FA00CCC08B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC1A4F1F51568058BA469B53 /* Pods-My Bank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -393,6 +475,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		847A6F6A266784CE0095F3F0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8465D931266642F700CCC08B /* Project object */;
 }
