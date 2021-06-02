@@ -24,9 +24,10 @@
 		847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F62266784670095F3F0 /* SAPinViewController.swift */; };
 		847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F63266784670095F3F0 /* SAButtonView.swift */; };
 		847A6F68266784670095F3F0 /* SACircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F64266784670095F3F0 /* SACircleView.swift */; };
-		847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 847A6F6A266784CE0095F3F0 /* SnapKit */; };
+		847A6F6B266784CE0095F3F0 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */; };
 		847A6F6F26678D060095F3F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F6D26678D060095F3F0 /* LoginViewController.swift */; };
 		847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F6E26678D060095F3F0 /* LoginViewController.xib */; };
+		D22A98A12C49156B865390E6 /* Pods_My_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */,
+				847A6F6B266784CE0095F3F0 /* BuildFile in Frameworks */,
+				D22A98A12C49156B865390E6 /* Pods_My_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,7 @@
 				8465D935266642F700CCC08B /* Sources */,
 				8465D936266642F700CCC08B /* Frameworks */,
 				8465D937266642F700CCC08B /* Resources */,
+				5B5FA32EE95B8A273ED00894 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,7 +191,7 @@
 			);
 			name = "My Bank";
 			packageProductDependencies = (
-				847A6F6A266784CE0095F3F0 /* SnapKit */,
+				847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */,
 			);
 			productName = "My Bank";
 			productReference = 8465D939266642F700CCC08B /* My Bank.app */;
@@ -218,7 +221,7 @@
 			);
 			mainGroup = 8465D930266642F700CCC08B;
 			packageReferences = (
-				847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 8465D93A266642F700CCC08B /* Products */;
 			projectDirPath = "";
@@ -246,6 +249,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5B5FA32EE95B8A273ED00894 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Bank/Pods-My Bank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Bank/Pods-My Bank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Bank/Pods-My Bank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B881241977EA2E56DBF49375 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -493,7 +513,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -504,9 +524,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		847A6F6A266784CE0095F3F0 /* SnapKit */ = {
+		847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

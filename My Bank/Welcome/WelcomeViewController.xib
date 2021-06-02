@@ -70,7 +70,7 @@ Click here and conctat us.</string>
     </objects>
     <designables>
         <designable name="Ht2-CQ-41t">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+            <size key="intrinsicContentSize" width="149" height="30"/>
         </designable>
     </designables>
     <resources>

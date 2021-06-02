@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="My_Bank" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="Vu9-U3-DdF" id="f33-Sj-Aqx"/>
+                <outlet property="loginButton" destination="lfE-Ak-m7V" id="4ic-N2-RM1"/>
+                <outlet property="passwordTextField" destination="Djb-NH-rtz" id="dDa-6M-Yk7"/>
+                <outlet property="usernameTextField" destination="rxm-9b-YrX" id="ojT-3U-zC2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -97,34 +101,40 @@
                             <color key="textColor" name="Light"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoV-4T-bI0" customClass="AccentButton" customModule="My_Bank" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-Ak-m7V" customClass="AccentButton" customModule="My_Bank" customModuleProvider="target">
                             <rect key="frame" x="42" y="262" width="266" height="55"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="55" id="fqK-6s-Fp8"/>
+                                <constraint firstAttribute="height" constant="55" id="6Ys-lm-ZZs"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="m0q-F9-DJZ"/>
                             </constraints>
-                            <state key="normal" title="Login"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Login"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="bMo-bg-R6e"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" name="Background"/>
                     <constraints>
                         <constraint firstItem="pB6-la-UH7" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="22" id="0a4-hi-KX4"/>
                         <constraint firstItem="ofd-Ps-pVp" firstAttribute="top" secondItem="Vu9-U3-DdF" secondAttribute="top" constant="32" id="3ih-3C-28Z"/>
-                        <constraint firstItem="qoV-4T-bI0" firstAttribute="top" secondItem="A4T-pb-iIp" secondAttribute="bottom" constant="32" id="7Ou-PC-p7p"/>
+                        <constraint firstItem="lfE-Ak-m7V" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="42" id="5GZ-Jc-wj3"/>
                         <constraint firstItem="j1B-X2-VBr" firstAttribute="top" secondItem="7Hf-iw-EqU" secondAttribute="bottom" constant="4" id="Ek8-ls-qX6"/>
                         <constraint firstAttribute="height" constant="333" id="Gsw-wN-cJK"/>
-                        <constraint firstAttribute="bottom" secondItem="qoV-4T-bI0" secondAttribute="bottom" constant="16" id="ITH-1M-s9a"/>
                         <constraint firstAttribute="trailing" secondItem="A4T-pb-iIp" secondAttribute="trailing" constant="22" id="KC5-D9-RpK"/>
                         <constraint firstAttribute="trailing" secondItem="ofd-Ps-pVp" secondAttribute="trailing" id="NLA-4C-PEK"/>
                         <constraint firstItem="A4T-pb-iIp" firstAttribute="top" secondItem="pB6-la-UH7" secondAttribute="bottom" constant="4" id="VPr-wG-hm8"/>
                         <constraint firstItem="7Hf-iw-EqU" firstAttribute="top" secondItem="ofd-Ps-pVp" secondAttribute="bottom" constant="16" id="VoH-i2-we9"/>
                         <constraint firstItem="A4T-pb-iIp" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="22" id="Wa9-ka-Dpg"/>
                         <constraint firstAttribute="trailing" secondItem="j1B-X2-VBr" secondAttribute="trailing" constant="22" id="gux-PY-0Ih"/>
+                        <constraint firstItem="lfE-Ak-m7V" firstAttribute="top" secondItem="A4T-pb-iIp" secondAttribute="bottom" constant="32" id="kKu-YJ-Tbu"/>
                         <constraint firstItem="7Hf-iw-EqU" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="22" id="lzh-Yb-MRd"/>
                         <constraint firstItem="pB6-la-UH7" firstAttribute="top" secondItem="j1B-X2-VBr" secondAttribute="bottom" constant="19" id="nps-Gf-kCf"/>
+                        <constraint firstAttribute="bottom" secondItem="lfE-Ak-m7V" secondAttribute="bottom" constant="16" id="rDM-je-uhM"/>
                         <constraint firstItem="j1B-X2-VBr" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="22" id="rc6-uM-2B1"/>
+                        <constraint firstAttribute="trailing" secondItem="lfE-Ak-m7V" secondAttribute="trailing" constant="42" id="tc1-8F-slw"/>
                         <constraint firstItem="ofd-Ps-pVp" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" id="tq0-JM-2G9"/>
-                        <constraint firstItem="qoV-4T-bI0" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" constant="42" id="vYL-J1-9XV"/>
-                        <constraint firstAttribute="trailing" secondItem="qoV-4T-bI0" secondAttribute="trailing" constant="42" id="vYt-5b-d3z"/>
                     </constraints>
                 </view>
             </subviews>
@@ -139,6 +149,11 @@
             <point key="canvasLocation" x="121.73913043478262" y="109.82142857142857"/>
         </view>
     </objects>
+    <designables>
+        <designable name="lfE-Ak-m7V">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="key" width="18" height="18"/>
         <image name="man" width="16" height="18"/>

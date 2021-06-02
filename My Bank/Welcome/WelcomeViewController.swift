@@ -15,6 +15,8 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-       
+        let loginViewController = LoginViewController(nibName: "\(LoginViewController.self)", bundle: nil)
+        loginViewController.modalPresentationStyle = .fullScreen
+        present(loginViewController, animated: true, completion: nil)
     }
 }
