@@ -29,6 +29,8 @@
 		847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F6E26678D060095F3F0 /* LoginViewController.xib */; };
 		847A6F742668EF400095F3F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F722668EF400095F3F0 /* HomeViewController.swift */; };
 		847A6F752668EF400095F3F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F732668EF400095F3F0 /* HomeViewController.xib */; };
+		847A6F792668F8990095F3F0 /* IconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F782668F8990095F3F0 /* IconTextView.swift */; };
+		847A6F7B2668F8DA0095F3F0 /* IconTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F7A2668F8DA0095F3F0 /* IconTextView.xib */; };
 		D22A98A12C49156B865390E6 /* Pods_My_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		847A6F6E26678D060095F3F0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		847A6F722668EF400095F3F0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		847A6F732668EF400095F3F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		847A6F782668F8990095F3F0 /* IconTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextView.swift; sourceTree = "<group>"; };
+		847A6F7A2668F8DA0095F3F0 /* IconTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTextView.xib; sourceTree = "<group>"; };
 		9E67D5B043CBB33633DA2128 /* Pods-My Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Bank.debug.xcconfig"; path = "Target Support Files/Pods-My Bank/Pods-My Bank.debug.xcconfig"; sourceTree = "<group>"; };
 		CC1A4F1F51568058BA469B53 /* Pods-My Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Bank.release.xcconfig"; path = "Target Support Files/Pods-My Bank/Pods-My Bank.release.xcconfig"; sourceTree = "<group>"; };
 		D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Bank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 				847A6F522666C28A0095F3F0 /* Colors.xcassets */,
 				847A6F722668EF400095F3F0 /* HomeViewController.swift */,
 				847A6F732668EF400095F3F0 /* HomeViewController.xib */,
+				847A6F782668F8990095F3F0 /* IconTextView.swift */,
+				847A6F7A2668F8DA0095F3F0 /* IconTextView.xib */,
 			);
 			path = "My Bank";
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			files = (
 				847A6F532666C28A0095F3F0 /* Colors.xcassets in Resources */,
 				8465D949266642FA00CCC08B /* LaunchScreen.storyboard in Resources */,
+				847A6F7B2668F8DA0095F3F0 /* IconTextView.xib in Resources */,
 				847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */,
 				8465D95D2666954700CCC08B /* WelcomeViewController.xib in Resources */,
 				8465D946266642FA00CCC08B /* Assets.xcassets in Resources */,
@@ -302,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847A6F792668F8990095F3F0 /* IconTextView.swift in Sources */,
 				847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
