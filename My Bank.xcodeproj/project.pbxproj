@@ -19,12 +19,12 @@
 		847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F552666C31A0095F3F0 /* CustomButton.swift */; };
 		847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F592666C8C00095F3F0 /* TabBarCell.swift */; };
 		847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F5A2666C8C00095F3F0 /* TabBarView.swift */; };
-		847A6F5E2666C8C00095F3F0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F5B2666C8C00095F3F0 /* TabBar.swift */; };
+		847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F5B2666C8C00095F3F0 /* TabBarViewController.swift */; };
 		847A6F65266784670095F3F0 /* SAPinConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F61266784660095F3F0 /* SAPinConstants.swift */; };
 		847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F62266784670095F3F0 /* SAPinViewController.swift */; };
 		847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F63266784670095F3F0 /* SAButtonView.swift */; };
 		847A6F68266784670095F3F0 /* SACircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F64266784670095F3F0 /* SACircleView.swift */; };
-		847A6F6B266784CE0095F3F0 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */; };
+		847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 847A6F6A266784CE0095F3F0 /* SnapKit */; };
 		847A6F6F26678D060095F3F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F6D26678D060095F3F0 /* LoginViewController.swift */; };
 		847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F6E26678D060095F3F0 /* LoginViewController.xib */; };
 		D22A98A12C49156B865390E6 /* Pods_My_Bank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86B798117A5724FC50073F9 /* Pods_My_Bank.framework */; };
@@ -45,7 +45,7 @@
 		847A6F552666C31A0095F3F0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		847A6F592666C8C00095F3F0 /* TabBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
 		847A6F5A2666C8C00095F3F0 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		847A6F5B2666C8C00095F3F0 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		847A6F5B2666C8C00095F3F0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		847A6F61266784660095F3F0 /* SAPinConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPinConstants.swift; sourceTree = "<group>"; };
 		847A6F62266784670095F3F0 /* SAPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPinViewController.swift; sourceTree = "<group>"; };
 		847A6F63266784670095F3F0 /* SAButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAButtonView.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847A6F6B266784CE0095F3F0 /* BuildFile in Frameworks */,
+				847A6F6B266784CE0095F3F0 /* SnapKit in Frameworks */,
 				D22A98A12C49156B865390E6 /* Pods_My_Bank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +136,7 @@
 		847A6F5F2666C8CC0095F3F0 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				847A6F5B2666C8C00095F3F0 /* TabBar.swift */,
+				847A6F5B2666C8C00095F3F0 /* TabBarViewController.swift */,
 				847A6F592666C8C00095F3F0 /* TabBarCell.swift */,
 				847A6F5A2666C8C00095F3F0 /* TabBarView.swift */,
 			);
@@ -191,7 +191,7 @@
 			);
 			name = "My Bank";
 			packageProductDependencies = (
-				847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */,
+				847A6F6A266784CE0095F3F0 /* SnapKit */,
 			);
 			productName = "My Bank";
 			productReference = 8465D939266642F700CCC08B /* My Bank.app */;
@@ -221,7 +221,7 @@
 			);
 			mainGroup = 8465D930266642F700CCC08B;
 			packageReferences = (
-				847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */,
+				847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 8465D93A266642F700CCC08B /* Products */;
 			projectDirPath = "";
@@ -295,7 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847A6F5E2666C8C00095F3F0 /* TabBar.swift in Sources */,
+				847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
@@ -513,7 +513,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */ = {
+		847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -524,9 +524,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		847A6F6A266784CE0095F3F0 /* SwiftPackageProductDependency */ = {
+		847A6F6A266784CE0095F3F0 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 847A6F69266784CE0095F3F0 /* RemoteSwiftPackageReference */;
+			package = 847A6F69266784CE0095F3F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

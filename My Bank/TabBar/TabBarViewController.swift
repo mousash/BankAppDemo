@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class TabBar: UIViewController {
+open class TabBarViewController: UIViewController {
 
   // MARK: Properties
   var rootView: TabBarView {
@@ -112,7 +112,7 @@ open class TabBar: UIViewController {
 }
 
 // MARK: - View Containment API
-extension TabBar {
+extension TabBarViewController {
 
   func add(_ child: UIViewController, frame: CGRect? = nil) {
     addChild(child)
