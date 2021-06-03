@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -52,7 +51,7 @@ Click here and conctat us.</string>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ucm-Lt-Jx3" secondAttribute="trailing" constant="50" id="0lM-k1-25z"/>
                 <constraint firstItem="Ht2-CQ-41t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="44" id="5U7-2Y-gnz"/>
@@ -70,7 +69,7 @@ Click here and conctat us.</string>
     </objects>
     <designables>
         <designable name="Ht2-CQ-41t">
-            <size key="intrinsicContentSize" width="149" height="30"/>
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
     <resources>
@@ -78,8 +77,5 @@ Click here and conctat us.</string>
         <namedColor name="Link">
             <color red="0.26666666666666666" green="0.62352941176470589" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

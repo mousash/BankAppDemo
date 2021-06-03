@@ -123,15 +123,12 @@
 				847A6F542666C2910095F3F0 /* Welcome */,
 				847A6F7126678D610095F3F0 /* Login */,
 				847A6F5F2666C8CC0095F3F0 /* TabBar */,
+				847A6F7C266929720095F3F0 /* Home */,
 				8465D942266642F700CCC08B /* Main.storyboard */,
 				8465D947266642FA00CCC08B /* LaunchScreen.storyboard */,
 				8465D94A266642FA00CCC08B /* Info.plist */,
 				8465D945266642FA00CCC08B /* Assets.xcassets */,
 				847A6F522666C28A0095F3F0 /* Colors.xcassets */,
-				847A6F722668EF400095F3F0 /* HomeViewController.swift */,
-				847A6F732668EF400095F3F0 /* HomeViewController.xib */,
-				847A6F782668F8990095F3F0 /* IconTextView.swift */,
-				847A6F7A2668F8DA0095F3F0 /* IconTextView.xib */,
 			);
 			path = "My Bank";
 			sourceTree = "<group>";
@@ -182,6 +179,17 @@
 				847A6F6E26678D060095F3F0 /* LoginViewController.xib */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		847A6F7C266929720095F3F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				847A6F722668EF400095F3F0 /* HomeViewController.swift */,
+				847A6F732668EF400095F3F0 /* HomeViewController.xib */,
+				847A6F782668F8990095F3F0 /* IconTextView.swift */,
+				847A6F7A2668F8DA0095F3F0 /* IconTextView.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -40,7 +40,7 @@ open class TabBarViewController: UIViewController {
     }
   }
 
-  open var tabbarHeight: CGFloat = 50 {
+  open var tabbarHeight: CGFloat = 40 {
     didSet {
       self.updateVM()
     }

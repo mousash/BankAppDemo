@@ -151,7 +151,7 @@
     </objects>
     <designables>
         <designable name="lfE-Ak-m7V">
-            <size key="intrinsicContentSize" width="38" height="30"/>
+            <size key="intrinsicContentSize" width="30" height="30"/>
         </designable>
     </designables>
     <resources>

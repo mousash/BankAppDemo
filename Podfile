@@ -7,5 +7,6 @@ target 'My Bank' do
 
   # Pods for My Bank
   pod 'IQKeyboardManagerSwift'
+  pod 'FloatingPanel'
 
 end

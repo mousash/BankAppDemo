@@ -70,8 +70,8 @@ class TabBarView: UIView {
   func style() {
     self.backgroundColor = .clear
 
-    self.collection.layer.borderWidth = 1
-    self.collection.layer.borderColor = UIColor.systemGray.cgColor
+//    self.collection.layer.borderWidth = 1
+//    self.collection.layer.borderColor = UIColor.systemGray.cgColor
     self.collection.backgroundColor = UIColor.clear
   }
 
