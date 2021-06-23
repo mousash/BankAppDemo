@@ -16,6 +16,7 @@
                 <outlet property="balanceLabel" destination="4wc-g7-NaG" id="wNE-Lk-qQ6"/>
                 <outlet property="loanView" destination="eN4-hH-LfK" id="fQ2-Vk-Zpu"/>
                 <outlet property="nameLabel" destination="Jzm-Mn-mwZ" id="xot-Dw-sWZ"/>
+                <outlet property="offerImage" destination="XwC-4e-yYg" id="TQ8-DS-IiF"/>
                 <outlet property="profileImage" destination="glB-yu-kUh" id="TTn-HC-JLG"/>
                 <outlet property="requestView" destination="KsO-Z3-HzM" id="5Hk-Dh-b3x"/>
                 <outlet property="sendView" destination="pXY-5L-hgc" id="IC6-ba-jrV"/>
@@ -27,7 +28,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="mK9-f1-kgG">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="euroBank" translatesAutoresizingMaskIntoConstraints="NO" id="mK9-f1-kgG">
                     <rect key="frame" x="-25" y="0.0" width="452" height="225"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="225" id="qpL-dX-mzP"/>
@@ -74,7 +75,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-do-RV4">
-                    <rect key="frame" x="21" y="391.5" width="361" height="120"/>
+                    <rect key="frame" x="21" y="367.5" width="361" height="120"/>
                     <subviews>
                         <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="pXY-5L-hgc" customClass="IconTextView" customModule="My_Bank" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="10" width="84.5" height="100"/>
@@ -109,6 +110,18 @@
                         <constraint firstAttribute="height" constant="120" id="tXv-9i-ORs"/>
                     </constraints>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="XwC-4e-yYg">
+                    <rect key="frame" x="16" y="532" width="382" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="hyE-dc-gE8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSH-I0-VHr">
+                    <rect key="frame" x="21" y="495.5" width="42.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,16 +129,21 @@
                 <constraint firstItem="mK9-f1-kgG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-25" id="1iJ-pa-o4m"/>
                 <constraint firstAttribute="trailing" secondItem="1td-V6-2si" secondAttribute="trailing" id="3PW-Oy-QnY"/>
                 <constraint firstAttribute="trailing" secondItem="sPA-do-RV4" secondAttribute="trailing" constant="32" id="4Xf-kY-k1c"/>
-                <constraint firstItem="sPA-do-RV4" firstAttribute="top" secondItem="4wc-g7-NaG" secondAttribute="bottom" constant="32" id="5c0-ue-nDh"/>
+                <constraint firstItem="sPA-do-RV4" firstAttribute="top" secondItem="4wc-g7-NaG" secondAttribute="bottom" constant="8" id="5c0-ue-nDh"/>
                 <constraint firstItem="1td-V6-2si" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Wc-yO-k9Q"/>
                 <constraint firstItem="1td-V6-2si" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dhb-h0-TKq"/>
                 <constraint firstItem="mK9-f1-kgG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="13" id="EIu-hR-fQB"/>
                 <constraint firstItem="8N9-PX-l7c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="HrZ-du-tpu"/>
                 <constraint firstItem="8N9-PX-l7c" firstAttribute="top" secondItem="mK9-f1-kgG" secondAttribute="bottom" constant="32" id="KaL-lN-gGH"/>
                 <constraint firstItem="4wc-g7-NaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="P2S-lX-hjK"/>
+                <constraint firstAttribute="trailing" secondItem="XwC-4e-yYg" secondAttribute="trailing" constant="16" id="arP-OU-jOP"/>
                 <constraint firstItem="sPA-do-RV4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="bUe-jM-dPo"/>
+                <constraint firstItem="gSH-I0-VHr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="cdc-ed-mrO"/>
                 <constraint firstItem="mK9-f1-kgG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="htW-yD-nDb"/>
+                <constraint firstItem="gSH-I0-VHr" firstAttribute="top" secondItem="sPA-do-RV4" secondAttribute="bottom" constant="8" id="jvf-3W-WCT"/>
+                <constraint firstItem="XwC-4e-yYg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="mGh-J2-hjc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4wc-g7-NaG" secondAttribute="trailing" constant="21" id="oTp-lj-Scd"/>
+                <constraint firstItem="XwC-4e-yYg" firstAttribute="top" secondItem="gSH-I0-VHr" secondAttribute="bottom" constant="16" id="uhv-nR-4Lm"/>
                 <constraint firstItem="4wc-g7-NaG" firstAttribute="top" secondItem="8N9-PX-l7c" secondAttribute="bottom" constant="16" id="vgP-aS-Zez"/>
             </constraints>
             <point key="canvasLocation" x="121.73913043478262" y="109.82142857142857"/>
@@ -133,6 +151,7 @@
     </objects>
     <resources>
         <image name="card" width="488" height="278"/>
+        <image name="euroBank" width="690" height="388"/>
         <image name="mousa" width="82" height="82"/>
         <namedColor name="Light">
             <color red="0.94117647058823528" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

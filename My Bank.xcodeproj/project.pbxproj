@@ -10,6 +10,7 @@
 		840CC83B268286430058FD3E /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC83A268286430058FD3E /* TransactionView.swift */; };
 		840CC8402683350C0058FD3E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC83F2683350C0058FD3E /* Transaction.swift */; };
 		840CC842268335370058FD3E /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC841268335370058FD3E /* TransactionViewModel.swift */; };
+		840CC84426834CF20058FD3E /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC84326834CF20058FD3E /* Gradient.swift */; };
 		8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93C266642F700CCC08B /* AppDelegate.swift */; };
 		8465D93F266642F700CCC08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93E266642F700CCC08B /* SceneDelegate.swift */; };
 		8465D944266642F700CCC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465D942266642F700CCC08B /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		840CC83A268286430058FD3E /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		840CC83F2683350C0058FD3E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		840CC841268335370058FD3E /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		840CC84326834CF20058FD3E /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		8465D939266642F700CCC08B /* My Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8465D93C266642F700CCC08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8465D93E266642F700CCC08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				8465D93C266642F700CCC08B /* AppDelegate.swift */,
 				8465D93E266642F700CCC08B /* SceneDelegate.swift */,
 				8465D9582666950900CCC08B /* Asset.swift */,
+				840CC84326834CF20058FD3E /* Gradient.swift */,
 				8465D942266642F700CCC08B /* Main.storyboard */,
 				8465D947266642FA00CCC08B /* LaunchScreen.storyboard */,
 				8465D94A266642FA00CCC08B /* Info.plist */,
@@ -363,6 +366,7 @@
 				847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
+				840CC84426834CF20058FD3E /* Gradient.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
 				840CC8402683350C0058FD3E /* Transaction.swift in Sources */,
 				847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */,

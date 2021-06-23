@@ -22,7 +22,7 @@ struct TransactionCell: View {
             
             VStack(alignment: .leading) {
                 Text(transaction.name)
-                    .font(.title3)
+                    .font(.callout)
                     .foregroundColor(.white)
                     .shadow(radius: 10)
                 Text(transaction.type.rawValue)
@@ -57,10 +57,10 @@ struct TransactionView: View {
                 Text("History")
                     .foregroundColor(Color(Assets.Colors.accent))
                     .padding([.leading, .top], 44)
-                    .font(.bold(.largeTitle)())
+                    .font(.bold(.title)())
                 Spacer()
               }
-              .padding(.bottom, 44)
+              .padding(.bottom, 12)
                 
                 ForEach(viewModel.transactions) { transaction in
                     TransactionCell(transaction: transaction)

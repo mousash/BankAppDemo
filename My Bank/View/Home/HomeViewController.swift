@@ -18,6 +18,7 @@ class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
     @IBOutlet weak var requestView: IconTextView!
     @IBOutlet weak var atmView: IconTextView!
     @IBOutlet weak var loanView: IconTextView!
+    @IBOutlet weak var offerImage: UIImageView!
     
     var fpc: FloatingPanelController!
     
@@ -30,6 +31,8 @@ class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
         setGroupedView(view: requestView, image: Assets.Images.request, title: "request")
         setGroupedView(view: atmView, image: Assets.Images.atm, title: "atm")
         setGroupedView(view: loanView, image: Assets.Images.loan, title: "loan")
+        
+        offerImage.layer.cornerRadius = 15
     }
     
     private func setFloatingTransactionView() {
