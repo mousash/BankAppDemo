@@ -22,6 +22,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="pau-ck-2FS">
+                    <rect key="frame" x="219" y="535" width="408" height="462"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="462" id="YL0-r8-ZPC"/>
+                        <constraint firstAttribute="width" constant="408" id="li6-zs-OPS"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="S80-AX-Oka">
+                    <rect key="frame" x="-186" y="-118" width="444" height="492"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="492" id="q18-m0-ISt"/>
+                        <constraint firstAttribute="width" constant="444" id="qUy-gV-TZI"/>
+                    </constraints>
+                </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vu9-U3-DdF">
                     <rect key="frame" x="32" y="281.5" width="350" height="333"/>
                     <subviews>
@@ -137,12 +151,25 @@
                         <constraint firstItem="ofd-Ps-pVp" firstAttribute="leading" secondItem="Vu9-U3-DdF" secondAttribute="leading" id="tq0-JM-2G9"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="oh2-T7-H4B">
+                    <rect key="frame" x="14" y="-164" width="444" height="324"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="324" id="LcD-sD-dTH"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="DarkBackground"/>
             <constraints>
                 <constraint firstItem="Vu9-U3-DdF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BDn-eo-hwd"/>
+                <constraint firstItem="pau-ck-2FS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="219" id="BIn-ph-nsr"/>
+                <constraint firstItem="pau-ck-2FS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="535" id="RjT-X4-yb4"/>
+                <constraint firstItem="oh2-T7-H4B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="ScQ-7p-phX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S80-AX-Oka" secondAttribute="trailing" constant="156" id="hOH-80-hns"/>
+                <constraint firstItem="oh2-T7-H4B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-164" id="iJK-GK-zU1"/>
+                <constraint firstAttribute="trailing" secondItem="oh2-T7-H4B" secondAttribute="trailing" constant="-44" id="mNI-M2-ln6"/>
                 <constraint firstItem="Vu9-U3-DdF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="s1z-Re-ioC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="S80-AX-Oka" secondAttribute="bottom" constant="488" id="wKA-wu-3Cy"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vu9-U3-DdF" secondAttribute="trailing" constant="32" id="xKa-et-TM8"/>
                 <constraint firstItem="Vu9-U3-DdF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="yYu-Zk-GrL"/>
             </constraints>
@@ -151,10 +178,11 @@
     </objects>
     <designables>
         <designable name="lfE-Ak-m7V">
-            <size key="intrinsicContentSize" width="30" height="30"/>
+            <size key="intrinsicContentSize" width="38" height="30"/>
         </designable>
     </designables>
     <resources>
+        <image name="circle" width="363" height="363"/>
         <image name="key" width="18" height="18"/>
         <image name="man" width="16" height="18"/>
         <namedColor name="Background">
