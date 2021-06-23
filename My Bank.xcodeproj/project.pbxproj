@@ -13,6 +13,10 @@
 		840CC84426834CF20058FD3E /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC84326834CF20058FD3E /* Gradient.swift */; };
 		840CC847268381990058FD3E /* ATMMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC845268381990058FD3E /* ATMMapViewController.swift */; };
 		840CC848268381990058FD3E /* ATMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CC846268381990058FD3E /* ATMMapViewController.xib */; };
+		840CC84A2683885C0058FD3E /* ATMMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC8492683885C0058FD3E /* ATMMapViewModel.swift */; };
+		840CC84C268388800058FD3E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC84B268388800058FD3E /* Location.swift */; };
+		840CC85026838AD80058FD3E /* ATMLocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC84E26838AD80058FD3E /* ATMLocationCollectionViewCell.swift */; };
+		840CC85126838AD80058FD3E /* ATMLocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CC84F26838AD80058FD3E /* ATMLocationCollectionViewCell.xib */; };
 		8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93C266642F700CCC08B /* AppDelegate.swift */; };
 		8465D93F266642F700CCC08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93E266642F700CCC08B /* SceneDelegate.swift */; };
 		8465D944266642F700CCC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465D942266642F700CCC08B /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		840CC84326834CF20058FD3E /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		840CC845268381990058FD3E /* ATMMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMMapViewController.swift; sourceTree = "<group>"; };
 		840CC846268381990058FD3E /* ATMMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATMMapViewController.xib; sourceTree = "<group>"; };
+		840CC8492683885C0058FD3E /* ATMMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMMapViewModel.swift; sourceTree = "<group>"; };
+		840CC84B268388800058FD3E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		840CC84E26838AD80058FD3E /* ATMLocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMLocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		840CC84F26838AD80058FD3E /* ATMLocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATMLocationCollectionViewCell.xib; sourceTree = "<group>"; };
 		8465D939266642F700CCC08B /* My Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8465D93C266642F700CCC08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8465D93E266642F700CCC08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				840CC841268335370058FD3E /* TransactionViewModel.swift */,
+				840CC8492683885C0058FD3E /* ATMMapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				840CC83F2683350C0058FD3E /* Transaction.swift */,
+				840CC84B268388800058FD3E /* Location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,10 +150,20 @@
 				847A6F5F2666C8CC0095F3F0 /* TabBar */,
 				847A6F7C266929720095F3F0 /* Home */,
 				840CC839268285AD0058FD3E /* Transaction */,
-				840CC845268381990058FD3E /* ATMMapViewController.swift */,
-				840CC846268381990058FD3E /* ATMMapViewController.xib */,
+				840CC84D2683893E0058FD3E /* ATMMap */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		840CC84D2683893E0058FD3E /* ATMMap */ = {
+			isa = PBXGroup;
+			children = (
+				840CC845268381990058FD3E /* ATMMapViewController.swift */,
+				840CC846268381990058FD3E /* ATMMapViewController.xib */,
+				840CC84E26838AD80058FD3E /* ATMLocationCollectionViewCell.swift */,
+				840CC84F26838AD80058FD3E /* ATMLocationCollectionViewCell.xib */,
+			);
+			path = ATMMap;
 			sourceTree = "<group>";
 		};
 		8465D930266642F700CCC08B = {
@@ -313,6 +333,7 @@
 				847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */,
 				8465D95D2666954700CCC08B /* WelcomeViewController.xib in Resources */,
 				8465D946266642FA00CCC08B /* Assets.xcassets in Resources */,
+				840CC85126838AD80058FD3E /* ATMLocationCollectionViewCell.xib in Resources */,
 				840CC848268381990058FD3E /* ATMMapViewController.xib in Resources */,
 				847A6F752668EF400095F3F0 /* HomeViewController.xib in Resources */,
 				8465D944266642F700CCC08B /* Main.storyboard in Resources */,
@@ -373,12 +394,15 @@
 				847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
+				840CC84A2683885C0058FD3E /* ATMMapViewModel.swift in Sources */,
 				840CC84426834CF20058FD3E /* Gradient.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
 				840CC8402683350C0058FD3E /* Transaction.swift in Sources */,
 				847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */,
 				847A6F742668EF400095F3F0 /* HomeViewController.swift in Sources */,
 				847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */,
+				840CC84C268388800058FD3E /* Location.swift in Sources */,
+				840CC85026838AD80058FD3E /* ATMLocationCollectionViewCell.swift in Sources */,
 				847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */,
 				840CC842268335370058FD3E /* TransactionViewModel.swift in Sources */,
 				847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */,

@@ -14,12 +14,15 @@ class ATMMapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let viewModel = ATMMapViewModel()
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setLocation()
+        setPins()
+        setCollectionView()
     }
     
     private func setLocation() {
@@ -45,6 +48,22 @@ class ATMMapViewController: UIViewController {
         }
     }
     
+    private func setPins() {
+        for pin in viewModel.locations {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: pin.lat, longitude: pin.long)
+            annotation.title = pin.title
+//            annotation.subtitle = "current location"
+            mapView.addAnnotation(annotation)
+        }
+    }
+    
+    private func setCollectionView() {
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "\(ATMLocationCollectionViewCell.self)", bundle: nil), forCellWithReuseIdentifier: "\(ATMLocationCollectionViewCell.identifier)")
+    }
+    
     @IBAction func closeButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -61,11 +80,7 @@ extension ATMMapViewController: CLLocationManagerDelegate, MKMapViewDelegate {
         let region = MKCoordinateRegion(center: locValue, span: span)
         mapView.setRegion(region, animated: true)
         
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = locValue//CLLocationCoordinate2D(latitude: <#T##CLLocationDegrees#>, longitude: <#T##CLLocationDegrees#>)
-        annotation.title = "Javed Multani"
-        annotation.subtitle = "current location"
-        mapView.addAnnotation(annotation)
+        
         
         //centerMap(locValue)
     }
@@ -73,4 +88,22 @@ extension ATMMapViewController: CLLocationManagerDelegate, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
             print("Pin Tapped")
         }
+}
+
+extension ATMMapViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.locations.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ATMLocationCollectionViewCell.identifier, for: indexPath as IndexPath) as! ATMLocationCollectionViewCell
+                
+        let location = viewModel.locations[indexPath.row]
+        cell.configure(data: location)
+        
+        return cell
+    }
+    
+    
 }
