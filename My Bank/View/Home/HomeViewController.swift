@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 import FloatingPanel
 
 class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
@@ -21,7 +22,7 @@ class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
                 fpc.delegate = self // Optional
 
                 // Set a content view controller.
-                let contentVC = WelcomeViewController()
+                let contentVC = UIHostingController(rootView: TransactionView())
                 fpc.set(contentViewController: contentVC)
 
                 // Track a scroll view(or the siblings) in the content view controller.

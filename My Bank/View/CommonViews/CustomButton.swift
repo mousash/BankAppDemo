@@ -33,6 +33,6 @@ final class AccentButton: UIButton {
     func setup() {
         self.clipsToBounds = true
         self.layer.cornerRadius = 15
-        self.layer.backgroundColor = Assets.Colors.accent?.cgColor
+        self.layer.backgroundColor = UIColor(named: Assets.Colors.accent)?.cgColor
     }
 }

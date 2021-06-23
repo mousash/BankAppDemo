@@ -23,17 +23,20 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
-        let vc = TabBarViewController()
-
-        vc.viewControllers = [
-            self.viewController(with: "home", view: WelcomeViewController()),
-            self.viewController(with: "cards", view: HomeViewController()),
-            self.viewController(with: "stats", view: LoginViewController()),
-            self.viewController(with: "profile", view: HomeViewController()),
-        ]
-        vc.selectedTab = 0
-        vc.tabbarHeight = 40
-
+//        let vc = TabBarViewController()
+//
+//        vc.viewControllers = [
+//            self.viewController(with: "home", view: HomeViewController()),
+//            self.viewController(with: "cards", view: HomeViewController()),
+//            self.viewController(with: "stats", view: HomeViewController()),
+//            self.viewController(with: "profile", view: HomeViewController()),
+//        ]
+//        vc.selectedTab = 0
+//        vc.tabbarHeight = 40
+        
+        let vc = HomeViewController(nibName: "\(HomeViewController.self)", bundle: nil)
+        
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
     

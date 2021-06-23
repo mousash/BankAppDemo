@@ -15,10 +15,11 @@ struct Assets {
     }
     
     struct Colors {
-        static let accent = UIColor(named: "Accent")
-        static let link = UIColor(named: "Link")
-        static let background = UIColor(named: "Background")
-        static let darkBackground = UIColor(named: "DarkBackground")
-        static let light = UIColor(named: "Light")
+        static let accent = "Accent"
+        static let accentRed = "AccentRed"
+        static let link = "Link"
+        static let background = "Background"
+        static let darkBackground = "DarkBackground"
+        static let light = "Light"
     }
 }

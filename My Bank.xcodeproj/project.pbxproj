@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840CC83B268286430058FD3E /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC83A268286430058FD3E /* TransactionView.swift */; };
 		8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93C266642F700CCC08B /* AppDelegate.swift */; };
 		8465D93F266642F700CCC08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93E266642F700CCC08B /* SceneDelegate.swift */; };
 		8465D944266642F700CCC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465D942266642F700CCC08B /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840CC83A268286430058FD3E /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		8465D939266642F700CCC08B /* My Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8465D93C266642F700CCC08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8465D93E266642F700CCC08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,41 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		840CC839268285AD0058FD3E /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				840CC83A268286430058FD3E /* TransactionView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		840CC83C2683349B0058FD3E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		840CC83D268334A40058FD3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		840CC83E268334AB0058FD3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				847A6F602666CDB80095F3F0 /* CommonViews */,
+				847A6F542666C2910095F3F0 /* Welcome */,
+				847A6F7126678D610095F3F0 /* Login */,
+				847A6F5F2666C8CC0095F3F0 /* TabBar */,
+				847A6F7C266929720095F3F0 /* Home */,
+				840CC839268285AD0058FD3E /* Transaction */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8465D930266642F700CCC08B = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +153,12 @@
 		8465D93B266642F700CCC08B /* My Bank */ = {
 			isa = PBXGroup;
 			children = (
+				840CC83E268334AB0058FD3E /* View */,
+				840CC83D268334A40058FD3E /* Model */,
+				840CC83C2683349B0058FD3E /* ViewModel */,
 				8465D93C266642F700CCC08B /* AppDelegate.swift */,
 				8465D93E266642F700CCC08B /* SceneDelegate.swift */,
 				8465D9582666950900CCC08B /* Asset.swift */,
-				847A6F602666CDB80095F3F0 /* CommonViews */,
-				847A6F542666C2910095F3F0 /* Welcome */,
-				847A6F7126678D610095F3F0 /* Login */,
-				847A6F5F2666C8CC0095F3F0 /* TabBar */,
-				847A6F7C266929720095F3F0 /* Home */,
 				8465D942266642F700CCC08B /* Main.storyboard */,
 				8465D947266642FA00CCC08B /* LaunchScreen.storyboard */,
 				8465D94A266642FA00CCC08B /* Info.plist */,
@@ -318,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847A6F792668F8990095F3F0 /* IconTextView.swift in Sources */,
+				840CC83B268286430058FD3E /* TransactionView.swift in Sources */,
 				847A6F5E2666C8C00095F3F0 /* TabBarViewController.swift in Sources */,
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
