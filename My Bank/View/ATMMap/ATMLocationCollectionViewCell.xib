@@ -21,26 +21,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="177" height="61"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7x-Va-w4p">
-                                <rect key="frame" x="8" y="8" width="161" height="21"/>
+                                <rect key="frame" x="8" y="8" width="161" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="Light"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-ye-jN4">
-                                <rect key="frame" x="8" y="37" width="161" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-Lg-l16">
+                                <rect key="frame" x="8" y="37" width="161" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" name="Light"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="Accent"/>
                         <constraints>
-                            <constraint firstItem="n7x-Va-w4p" firstAttribute="top" secondItem="zMn-Zz-QfB" secondAttribute="top" constant="8" id="6Ac-U2-6K3"/>
-                            <constraint firstAttribute="trailing" secondItem="5Vl-ye-jN4" secondAttribute="trailing" constant="8" id="EQz-my-Dyp"/>
-                            <constraint firstItem="5Vl-ye-jN4" firstAttribute="top" secondItem="n7x-Va-w4p" secondAttribute="bottom" constant="8" id="JRM-dc-9IG"/>
-                            <constraint firstAttribute="trailing" secondItem="n7x-Va-w4p" secondAttribute="trailing" constant="8" id="XwV-SL-m0P"/>
-                            <constraint firstItem="5Vl-ye-jN4" firstAttribute="leading" secondItem="zMn-Zz-QfB" secondAttribute="leading" constant="8" id="j0e-WO-G7f"/>
-                            <constraint firstItem="n7x-Va-w4p" firstAttribute="leading" secondItem="zMn-Zz-QfB" secondAttribute="leading" constant="8" id="ocD-Kj-WZ7"/>
+                            <constraint firstItem="n7x-Va-w4p" firstAttribute="leading" secondItem="zMn-Zz-QfB" secondAttribute="leading" constant="8" id="9ws-8A-fCm"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaB-Lg-l16" secondAttribute="trailing" constant="8" id="Gnx-m5-h9j"/>
+                            <constraint firstItem="ZaB-Lg-l16" firstAttribute="leading" secondItem="zMn-Zz-QfB" secondAttribute="leading" constant="8" id="HaO-hx-eau"/>
+                            <constraint firstItem="ZaB-Lg-l16" firstAttribute="top" secondItem="n7x-Va-w4p" secondAttribute="bottom" constant="4" id="b2w-Xb-WB0"/>
+                            <constraint firstAttribute="trailing" secondItem="n7x-Va-w4p" secondAttribute="trailing" constant="8" id="j3F-0B-hyu"/>
+                            <constraint firstItem="n7x-Va-w4p" firstAttribute="top" secondItem="zMn-Zz-QfB" secondAttribute="top" constant="8" id="kvE-hk-HTI"/>
+                            <constraint firstAttribute="bottom" secondItem="ZaB-Lg-l16" secondAttribute="bottom" constant="8" id="p2f-8B-DS1"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,14 +49,14 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="zMn-Zz-QfB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0cE-WQ-uCA"/>
-                <constraint firstAttribute="trailing" secondItem="zMn-Zz-QfB" secondAttribute="trailing" id="1rp-qJ-tB0"/>
-                <constraint firstAttribute="bottom" secondItem="zMn-Zz-QfB" secondAttribute="bottom" id="rql-BZ-GDz"/>
-                <constraint firstItem="zMn-Zz-QfB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yq0-EG-sID"/>
+                <constraint firstAttribute="bottom" secondItem="zMn-Zz-QfB" secondAttribute="bottom" id="XBr-va-su6"/>
+                <constraint firstItem="zMn-Zz-QfB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZrV-rw-uIv"/>
+                <constraint firstItem="zMn-Zz-QfB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ciA-cK-43E"/>
+                <constraint firstAttribute="trailing" secondItem="zMn-Zz-QfB" secondAttribute="trailing" id="naI-Y9-q8V"/>
             </constraints>
             <size key="customSize" width="177" height="61"/>
             <connections>
-                <outlet property="awayLabel" destination="5Vl-ye-jN4" id="Clb-xD-Mhe"/>
+                <outlet property="awayLabel" destination="ZaB-Lg-l16" id="lZk-8C-wlH"/>
                 <outlet property="bgView" destination="zMn-Zz-QfB" id="1Pp-gc-Vzn"/>
                 <outlet property="titleLabel" destination="n7x-Va-w4p" id="6j7-4O-4Wa"/>
             </connections>

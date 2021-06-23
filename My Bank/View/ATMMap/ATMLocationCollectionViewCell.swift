@@ -19,6 +19,7 @@ class ATMLocationCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         bgView.layer.cornerRadius = 15
+        bgView.layer.masksToBounds = true
     }
 
     func configure(data: Location) {
