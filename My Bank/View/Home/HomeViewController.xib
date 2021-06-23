@@ -12,6 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="My_Bank" customModuleProvider="target">
             <connections>
+                <outlet property="atmView" destination="ybk-9I-PEz" id="pZY-aB-X1t"/>
+                <outlet property="balanceLabel" destination="4wc-g7-NaG" id="wNE-Lk-qQ6"/>
+                <outlet property="loanView" destination="eN4-hH-LfK" id="fQ2-Vk-Zpu"/>
+                <outlet property="nameLabel" destination="Jzm-Mn-mwZ" id="xot-Dw-sWZ"/>
+                <outlet property="profileImage" destination="glB-yu-kUh" id="TTn-HC-JLG"/>
+                <outlet property="requestView" destination="KsO-Z3-HzM" id="5Hk-Dh-b3x"/>
+                <outlet property="sendView" destination="pXY-5L-hgc" id="IC6-ba-jrV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

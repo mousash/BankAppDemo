@@ -7,24 +7,11 @@
 
 import SwiftUI
 
-struct Transaction: Identifiable, Hashable {
-    var id = UUID()
-    var name: String
-    var type: TransactionEnum
-    var amount: Double
-}
-
-enum TransactionEnum: String {
-    case recieved = "Recieved"
-    case sent = "Sent"
-}
-
 struct TransactionCell: View {
     var transaction: Transaction
     
     var body: some View {
         HStack {
-            
             Image("")
                 .resizable()
                 .frame(width: 50, height: 50)
@@ -61,16 +48,10 @@ struct TransactionCell: View {
 
 struct TransactionView: View {
     
-    let hikingTrails = [
-        Transaction(name: "Stanford Dish", type: .recieved, amount: 3.9),
-            Transaction(name: "Stanford Dish", type: .recieved, amount: 3.9),
-        Transaction(name: "Stanford Dish", type: .sent, amount: 3.9),
-            Transaction(name: "Stanford Dish", type: .recieved, amount: 3.9),
-        Transaction(name: "Stanford Dish", type: .sent, amount: 3.9),
-        ]
-    
+    let viewModel = TransactionViewModel()
     
         var body: some View {
+            
             VStack {
               HStack {
                 Text("History")
@@ -81,15 +62,13 @@ struct TransactionView: View {
               }
               .padding(.bottom, 44)
                 
-                ForEach(hikingTrails) { transaction in
-//                List (hikingTrails, id:\.self ) { trail in
+                ForEach(viewModel.transactions) { transaction in
                     TransactionCell(transaction: transaction)
                         .padding([.leading, .trailing], 44)
                 }
                 .background(Color.clear)
               Spacer()
             }
-            
             .background(SwiftUI.Color(Assets.Colors.background).edgesIgnoringSafeArea(.all))
         }
 }

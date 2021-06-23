@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		840CC83B268286430058FD3E /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC83A268286430058FD3E /* TransactionView.swift */; };
+		840CC8402683350C0058FD3E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC83F2683350C0058FD3E /* Transaction.swift */; };
+		840CC842268335370058FD3E /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CC841268335370058FD3E /* TransactionViewModel.swift */; };
 		8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93C266642F700CCC08B /* AppDelegate.swift */; };
 		8465D93F266642F700CCC08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D93E266642F700CCC08B /* SceneDelegate.swift */; };
 		8465D944266642F700CCC08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465D942266642F700CCC08B /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		840CC83A268286430058FD3E /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		840CC83F2683350C0058FD3E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		840CC841268335370058FD3E /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		8465D939266642F700CCC08B /* My Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8465D93C266642F700CCC08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8465D93E266642F700CCC08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		840CC83C2683349B0058FD3E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				840CC841268335370058FD3E /* TransactionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		840CC83D268334A40058FD3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				840CC83F2683350C0058FD3E /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,10 +364,12 @@
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
+				840CC8402683350C0058FD3E /* Transaction.swift in Sources */,
 				847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */,
 				847A6F742668EF400095F3F0 /* HomeViewController.swift in Sources */,
 				847A6F67266784670095F3F0 /* SAButtonView.swift in Sources */,
 				847A6F66266784670095F3F0 /* SAPinViewController.swift in Sources */,
+				840CC842268335370058FD3E /* TransactionViewModel.swift in Sources */,
 				847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */,
 				847A6F65266784670095F3F0 /* SAPinConstants.swift in Sources */,
 				8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */,
