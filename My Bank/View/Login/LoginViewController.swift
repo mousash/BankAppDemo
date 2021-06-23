@@ -35,7 +35,6 @@ class LoginViewController: UIViewController {
 //        vc.tabbarHeight = 40
         
         let vc = HomeViewController(nibName: "\(HomeViewController.self)", bundle: nil)
-        
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }

@@ -32,6 +32,9 @@ class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
         setGroupedView(view: atmView, image: Assets.Images.atm, title: "atm")
         setGroupedView(view: loanView, image: Assets.Images.loan, title: "loan")
         
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.atmViewTapped))
+        atmView.addGestureRecognizer(gesture)
+        
         offerImage.layer.cornerRadius = 15
     }
     
@@ -59,4 +62,12 @@ class HomeViewController: UIViewController, FloatingPanelControllerDelegate {
         view.titleLabel.text = title
         view.iconImage.image = UIImage(named: image)
     }
+    
+    @objc func atmViewTapped(sender : UITapGestureRecognizer) {
+        let vc = ATMMapViewController(nibName: "\(ATMMapViewController.self)", bundle: nil)
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
 }
+
+
