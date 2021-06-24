@@ -14,11 +14,12 @@
                 <outlet property="changePasscodeView" destination="Q4Y-MS-JjG" id="zlg-jt-aSc"/>
                 <outlet property="closeAccountGroupView" destination="IMA-tW-Djc" id="VqF-qV-1dl"/>
                 <outlet property="closeAccountView" destination="GQ7-4L-AJH" id="szj-mO-5tA"/>
-                <outlet property="faceIDView" destination="w8Z-d3-oAb" id="1XB-hu-Tik"/>
+                <outlet property="faceIDSwitch" destination="SVg-p9-NEA" id="GG5-z5-dzh"/>
+                <outlet property="faceIDView" destination="uNo-qm-eoL" id="gre-34-n88"/>
                 <outlet property="logoutView" destination="NcG-A3-egY" id="g65-lG-8UC"/>
                 <outlet property="nameLabel" destination="wq1-Rv-19u" id="1sM-ed-7Sd"/>
                 <outlet property="personalView" destination="TgK-1j-4Sb" id="cUY-Gi-cOf"/>
-                <outlet property="privacyView" destination="uNo-qm-eoL" id="P5h-pp-mWk"/>
+                <outlet property="privacyView" destination="w8Z-d3-oAb" id="6WQ-mm-mga"/>
                 <outlet property="profileImage" destination="7SY-Fy-bYw" id="60e-sc-jJn"/>
                 <outlet property="securityGroupView" destination="ytn-GZ-LWe" id="DV5-ZJ-tdK"/>
                 <outlet property="subNameLabel" destination="6sh-6E-ezQ" id="SUK-S6-9Zv"/>
@@ -46,10 +47,10 @@
                                             </constraints>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="7SY-Fy-bYw">
-                                            <rect key="frame" x="157" y="122.5" width="100" height="100"/>
+                                            <rect key="frame" x="147" y="108.5" width="120" height="120"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="V2m-bb-EcZ"/>
-                                                <constraint firstAttribute="width" constant="100" id="md1-Q0-X52"/>
+                                                <constraint firstAttribute="height" constant="120" id="V2m-bb-EcZ"/>
+                                                <constraint firstAttribute="width" constant="120" id="md1-Q0-X52"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-6E-ezQ">
@@ -71,7 +72,7 @@
                                         <constraint firstAttribute="trailing" secondItem="6sh-6E-ezQ" secondAttribute="trailing" constant="16" id="Bag-kR-Ysl"/>
                                         <constraint firstItem="pIP-Gg-Q1B" firstAttribute="top" secondItem="ylK-6Y-1eM" secondAttribute="top" constant="-1" id="Cp5-5H-8LI"/>
                                         <constraint firstAttribute="trailing" secondItem="pIP-Gg-Q1B" secondAttribute="trailing" id="Gwf-Qx-iH9"/>
-                                        <constraint firstItem="7SY-Fy-bYw" firstAttribute="centerY" secondItem="ylK-6Y-1eM" secondAttribute="centerY" id="QUG-na-VWN"/>
+                                        <constraint firstItem="7SY-Fy-bYw" firstAttribute="centerY" secondItem="ylK-6Y-1eM" secondAttribute="centerY" constant="-4" id="QUG-na-VWN"/>
                                         <constraint firstAttribute="bottom" secondItem="6sh-6E-ezQ" secondAttribute="bottom" constant="10" id="Sq4-UE-gUa"/>
                                         <constraint firstItem="6sh-6E-ezQ" firstAttribute="leading" secondItem="ylK-6Y-1eM" secondAttribute="leading" constant="16" id="YKW-Iq-JEe"/>
                                         <constraint firstItem="wq1-Rv-19u" firstAttribute="centerX" secondItem="ylK-6Y-1eM" secondAttribute="centerX" id="ZRb-rp-Tgh"/>
@@ -121,9 +122,16 @@
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNo-qm-eoL">
                                             <rect key="frame" x="0.0" y="104" width="378" height="52"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-p9-NEA">
+                                                    <rect key="frame" x="315" y="10.5" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
                                             <color key="backgroundColor" name="Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="52" id="FVK-xd-0ai"/>
+                                                <constraint firstAttribute="trailing" secondItem="SVg-p9-NEA" secondAttribute="trailing" constant="14" id="J72-rb-PoA"/>
+                                                <constraint firstItem="SVg-p9-NEA" firstAttribute="centerY" secondItem="uNo-qm-eoL" secondAttribute="centerY" id="VDU-da-eJ1"/>
                                             </constraints>
                                         </view>
                                     </subviews>

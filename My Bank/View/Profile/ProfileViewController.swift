@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logoutView: UIView!
     @IBOutlet weak var securityGroupView: UIView!
     @IBOutlet weak var closeAccountGroupView: UIView!
+    @IBOutlet weak var faceIDSwitch: UISwitch!
     
     
     override func viewDidLoad() {
@@ -51,6 +52,8 @@ class ProfileViewController: UIViewController {
         
         nameLabel.text = "Mousa Amin Sharifi"
         subNameLabel.text = "iOS Developer"
+        
+        faceIDSwitch.onTintColor = UIColor(named: Assets.Colors.accentRed)
     }
     
     private func setDetailView(view: UIView, icon: String, text: String) {
