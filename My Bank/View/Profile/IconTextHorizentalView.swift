@@ -21,12 +21,12 @@ struct IconTextHorizentalView: View {
                     Image(icon)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30, alignment: .center)
+                        .frame(width: 25, height: 25, alignment: .center)
                         
                     Text(text)
                         .foregroundColor(.white)
                         .font(.bold(.title3)())
-//                    Spacer()
+                        .padding(.leading, 8)
                 }
                 .padding(.all, 10)
             }

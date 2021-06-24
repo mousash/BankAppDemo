@@ -20,6 +20,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var faceIDView: UIView!
     @IBOutlet weak var closeAccountView: UIView!
     @IBOutlet weak var logoutView: UIView!
+    @IBOutlet weak var securityGroupView: UIView!
+    @IBOutlet weak var closeAccountGroupView: UIView!
     
     
     override func viewDidLoad() {
@@ -27,11 +29,11 @@ class ProfileViewController: UIViewController {
 
         setupUI()
         setDetailView(view: personalView, icon: "profile", text: "Personal details")
-        setDetailView(view: changePasscodeView, icon: "profile", text: "Personal details")
-        setDetailView(view: privacyView, icon: "profile", text: "Personal details")
-        setDetailView(view: faceIDView, icon: "profile", text: "Personal details")
-        setDetailView(view: closeAccountView, icon: "profile", text: "Personal details")
-        setDetailView(view: logoutView, icon: "profile", text: "Personal details")
+        setDetailView(view: changePasscodeView, icon: "key2", text: "Change passcode")
+        setDetailView(view: privacyView, icon: "lock", text: "Privacy")
+        setDetailView(view: faceIDView, icon: "faceID", text: "Sign in with Face ID")
+        setDetailView(view: closeAccountView, icon: "heartBroken", text: "Close account")
+        setDetailView(view: logoutView, icon: "logout", text: "logout")
         
     }
     
@@ -42,6 +44,11 @@ class ProfileViewController: UIViewController {
         profileImage.layer.borderWidth = 5
         profileImage.layer.borderColor = UIColor.white.cgColor
         
+        makeCornerradiusToView(view: personalView)
+        makeCornerradiusToView(view: securityGroupView)
+        makeCornerradiusToView(view: closeAccountGroupView)
+        
+        
         nameLabel.text = "Mousa Amin Sharifi"
         subNameLabel.text = "iOS Developer"
     }
@@ -51,6 +58,10 @@ class ProfileViewController: UIViewController {
         child.view.translatesAutoresizingMaskIntoConstraints = false
         child.view.frame = view.bounds
         view.addSubview(child.view)
+        
+    }
+    
+    private func makeCornerradiusToView(view: UIView) {
         view.layer.cornerRadius = 15
         view.layer.masksToBounds = true
     }

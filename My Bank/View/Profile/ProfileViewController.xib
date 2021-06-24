@@ -12,13 +12,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="My_Bank" customModuleProvider="target">
             <connections>
                 <outlet property="changePasscodeView" destination="Q4Y-MS-JjG" id="zlg-jt-aSc"/>
-                <outlet property="closeAccountView" destination="GQ7-4L-AJH" id="sJE-wq-tJV"/>
+                <outlet property="closeAccountGroupView" destination="IMA-tW-Djc" id="VqF-qV-1dl"/>
+                <outlet property="closeAccountView" destination="GQ7-4L-AJH" id="szj-mO-5tA"/>
                 <outlet property="faceIDView" destination="w8Z-d3-oAb" id="1XB-hu-Tik"/>
-                <outlet property="logoutView" destination="NcG-A3-egY" id="XpA-bq-lim"/>
+                <outlet property="logoutView" destination="NcG-A3-egY" id="g65-lG-8UC"/>
                 <outlet property="nameLabel" destination="wq1-Rv-19u" id="1sM-ed-7Sd"/>
                 <outlet property="personalView" destination="TgK-1j-4Sb" id="cUY-Gi-cOf"/>
                 <outlet property="privacyView" destination="uNo-qm-eoL" id="P5h-pp-mWk"/>
                 <outlet property="profileImage" destination="7SY-Fy-bYw" id="60e-sc-jJn"/>
+                <outlet property="securityGroupView" destination="ytn-GZ-LWe" id="DV5-ZJ-tdK"/>
                 <outlet property="subNameLabel" destination="6sh-6E-ezQ" id="SUK-S6-9Zv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -125,7 +127,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="Background"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="w8Z-d3-oAb" secondAttribute="trailing" id="9F8-Nx-aIk"/>
                                         <constraint firstItem="uNo-qm-eoL" firstAttribute="top" secondItem="w8Z-d3-oAb" secondAttribute="bottom" id="DGS-eE-yah"/>
@@ -158,7 +160,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" name="Background"/>
                                     <constraints>
                                         <constraint firstItem="NcG-A3-egY" firstAttribute="leading" secondItem="IMA-tW-Djc" secondAttribute="leading" id="92u-mw-kjG"/>
                                         <constraint firstAttribute="trailing" secondItem="GQ7-4L-AJH" secondAttribute="trailing" id="MxB-Vr-8Ec"/>
