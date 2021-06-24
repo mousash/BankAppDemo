@@ -25,6 +25,9 @@
 		8465D9592666950900CCC08B /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D9582666950900CCC08B /* Asset.swift */; };
 		8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D95A2666954700CCC08B /* WelcomeViewController.swift */; };
 		8465D95D2666954700CCC08B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8465D95B2666954700CCC08B /* WelcomeViewController.xib */; };
+		84757CAD268487670036028A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84757CAB268487670036028A /* ProfileViewController.swift */; };
+		84757CAE268487670036028A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84757CAC268487670036028A /* ProfileViewController.xib */; };
+		84757CB32684C6F90036028A /* IconTextHorizentalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84757CB22684C6F90036028A /* IconTextHorizentalView.swift */; };
 		847A6F532666C28A0095F3F0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A6F522666C28A0095F3F0 /* Colors.xcassets */; };
 		847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F552666C31A0095F3F0 /* CustomButton.swift */; };
 		847A6F5C2666C8C00095F3F0 /* TabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847A6F592666C8C00095F3F0 /* TabBarCell.swift */; };
@@ -65,6 +68,9 @@
 		8465D9582666950900CCC08B /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		8465D95A2666954700CCC08B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8465D95B2666954700CCC08B /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		84757CAB268487670036028A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		84757CAC268487670036028A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		84757CB22684C6F90036028A /* IconTextHorizentalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextHorizentalView.swift; sourceTree = "<group>"; };
 		847A6F522666C28A0095F3F0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		847A6F552666C31A0095F3F0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		847A6F592666C8C00095F3F0 /* TabBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCell.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				847A6F7C266929720095F3F0 /* Home */,
 				840CC839268285AD0058FD3E /* Transaction */,
 				840CC84D2683893E0058FD3E /* ATMMap */,
+				84757CAF2684C6A60036028A /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +208,16 @@
 				847A6F522666C28A0095F3F0 /* Colors.xcassets */,
 			);
 			path = "My Bank";
+			sourceTree = "<group>";
+		};
+		84757CAF2684C6A60036028A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				84757CAB268487670036028A /* ProfileViewController.swift */,
+				84757CAC268487670036028A /* ProfileViewController.xib */,
+				84757CB22684C6F90036028A /* IconTextHorizentalView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		847A6F542666C2910095F3F0 /* Welcome */ = {
@@ -332,6 +349,7 @@
 				847A6F7B2668F8DA0095F3F0 /* IconTextView.xib in Resources */,
 				847A6F7026678D060095F3F0 /* LoginViewController.xib in Resources */,
 				8465D95D2666954700CCC08B /* WelcomeViewController.xib in Resources */,
+				84757CAE268487670036028A /* ProfileViewController.xib in Resources */,
 				8465D946266642FA00CCC08B /* Assets.xcassets in Resources */,
 				840CC85126838AD80058FD3E /* ATMLocationCollectionViewCell.xib in Resources */,
 				840CC848268381990058FD3E /* ATMMapViewController.xib in Resources */,
@@ -395,6 +413,7 @@
 				8465D95C2666954700CCC08B /* WelcomeViewController.swift in Sources */,
 				847A6F68266784670095F3F0 /* SACircleView.swift in Sources */,
 				840CC84A2683885C0058FD3E /* ATMMapViewModel.swift in Sources */,
+				84757CAD268487670036028A /* ProfileViewController.swift in Sources */,
 				840CC84426834CF20058FD3E /* Gradient.swift in Sources */,
 				847A6F5D2666C8C00095F3F0 /* TabBarView.swift in Sources */,
 				840CC8402683350C0058FD3E /* Transaction.swift in Sources */,
@@ -407,6 +426,7 @@
 				840CC842268335370058FD3E /* TransactionViewModel.swift in Sources */,
 				847A6F562666C31A0095F3F0 /* CustomButton.swift in Sources */,
 				847A6F65266784670095F3F0 /* SAPinConstants.swift in Sources */,
+				84757CB32684C6F90036028A /* IconTextHorizentalView.swift in Sources */,
 				8465D93D266642F700CCC08B /* AppDelegate.swift in Sources */,
 				840CC847268381990058FD3E /* ATMMapViewController.swift in Sources */,
 				8465D9592666950900CCC08B /* Asset.swift in Sources */,

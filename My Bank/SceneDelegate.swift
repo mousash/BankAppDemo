@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = WelcomeViewController(nibName: "\(WelcomeViewController.self)", bundle: nil)
+        window.rootViewController = ProfileViewController(nibName: "\(ProfileViewController.self)", bundle: nil)
         self.window = window
         window.makeKeyAndVisible()
     }

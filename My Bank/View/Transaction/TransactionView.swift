@@ -7,6 +7,33 @@
 
 import SwiftUI
 
+struct TransactionView: View {
+    
+    let viewModel = TransactionViewModel()
+    
+        var body: some View {
+            
+            VStack {
+              HStack {
+                Text("History")
+                    .foregroundColor(Color(Assets.Colors.accent))
+                    .padding([.leading, .top], 44)
+                    .font(.bold(.title)())
+                Spacer()
+              }
+              .padding(.bottom, 12)
+                
+                ForEach(viewModel.transactions) { transaction in
+                    TransactionCell(transaction: transaction)
+                        .padding([.leading, .trailing], 44)
+                }
+                .background(Color.clear)
+              Spacer()
+            }
+            .background(SwiftUI.Color(Assets.Colors.background).edgesIgnoringSafeArea(.all))
+        }
+}
+
 struct TransactionCell: View {
     var transaction: Transaction
     
@@ -44,33 +71,6 @@ struct TransactionCell: View {
                 
         }
     }
-}
-
-struct TransactionView: View {
-    
-    let viewModel = TransactionViewModel()
-    
-        var body: some View {
-            
-            VStack {
-              HStack {
-                Text("History")
-                    .foregroundColor(Color(Assets.Colors.accent))
-                    .padding([.leading, .top], 44)
-                    .font(.bold(.title)())
-                Spacer()
-              }
-              .padding(.bottom, 12)
-                
-                ForEach(viewModel.transactions) { transaction in
-                    TransactionCell(transaction: transaction)
-                        .padding([.leading, .trailing], 44)
-                }
-                .background(Color.clear)
-              Spacer()
-            }
-            .background(SwiftUI.Color(Assets.Colors.background).edgesIgnoringSafeArea(.all))
-        }
 }
 
 struct TransactionView_Previews: PreviewProvider {
