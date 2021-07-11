@@ -68,4 +68,9 @@ class ProfileViewController: UIViewController {
         view.layer.cornerRadius = 15
         view.layer.masksToBounds = true
     }
+    
+    @IBAction func notificationButtonAction(_ sender: Any) {
+        let notifVC = UIHostingController(rootView: NotificationsView())
+        present(notifVC, animated: true, completion: nil)
+    }
 }

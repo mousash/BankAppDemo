@@ -65,17 +65,26 @@
                                             <color key="textColor" name="Light"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X09-y4-SNv">
+                                            <rect key="frame" x="368" y="51" width="28" height="32"/>
+                                            <state key="normal" image="bell"/>
+                                            <connections>
+                                                <action selector="notificationButtonAction:" destination="-1" eventType="touchUpInside" id="P2j-Wm-rdw"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="wq1-Rv-19u" firstAttribute="leading" secondItem="ylK-6Y-1eM" secondAttribute="leading" constant="16" id="3p3-Il-WQU"/>
                                         <constraint firstAttribute="trailing" secondItem="6sh-6E-ezQ" secondAttribute="trailing" constant="16" id="Bag-kR-Ysl"/>
                                         <constraint firstItem="pIP-Gg-Q1B" firstAttribute="top" secondItem="ylK-6Y-1eM" secondAttribute="top" constant="-1" id="Cp5-5H-8LI"/>
+                                        <constraint firstAttribute="trailing" secondItem="X09-y4-SNv" secondAttribute="trailing" constant="18" id="Eqi-Vd-mYJ"/>
                                         <constraint firstAttribute="trailing" secondItem="pIP-Gg-Q1B" secondAttribute="trailing" id="Gwf-Qx-iH9"/>
                                         <constraint firstItem="7SY-Fy-bYw" firstAttribute="centerY" secondItem="ylK-6Y-1eM" secondAttribute="centerY" constant="-4" id="QUG-na-VWN"/>
                                         <constraint firstAttribute="bottom" secondItem="6sh-6E-ezQ" secondAttribute="bottom" constant="10" id="Sq4-UE-gUa"/>
                                         <constraint firstItem="6sh-6E-ezQ" firstAttribute="leading" secondItem="ylK-6Y-1eM" secondAttribute="leading" constant="16" id="YKW-Iq-JEe"/>
                                         <constraint firstItem="wq1-Rv-19u" firstAttribute="centerX" secondItem="ylK-6Y-1eM" secondAttribute="centerX" id="ZRb-rp-Tgh"/>
+                                        <constraint firstItem="X09-y4-SNv" firstAttribute="top" secondItem="ylK-6Y-1eM" secondAttribute="top" constant="51" id="Zy1-dF-7P3"/>
                                         <constraint firstItem="pIP-Gg-Q1B" firstAttribute="leading" secondItem="ylK-6Y-1eM" secondAttribute="leading" id="awZ-5p-vCv"/>
                                         <constraint firstAttribute="trailing" secondItem="wq1-Rv-19u" secondAttribute="trailing" constant="16" id="hJt-Op-5sO"/>
                                         <constraint firstItem="7SY-Fy-bYw" firstAttribute="centerX" secondItem="ylK-6Y-1eM" secondAttribute="centerX" id="nUL-sj-n4d"/>
@@ -227,6 +236,7 @@
     </objects>
     <resources>
         <image name="backgroundProfile" width="414.5" height="344.5"/>
+        <image name="bell" width="28" height="32"/>
         <image name="card" width="488" height="278"/>
         <namedColor name="Background">
             <color red="0.12941176470588237" green="0.15294117647058825" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
